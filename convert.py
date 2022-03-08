@@ -4,7 +4,7 @@ import csv
 
 try:
 
-    df = pd.read_excel('list_clients_OKBA.xlsx', 'Sheet1')
+    df = pd.read_excel('list_clients _RABAH.xlsx', 'Sheet1')
     df1 = df.replace(np.nan, '', regex=True)
 
     data = []
@@ -26,7 +26,7 @@ try:
         data.append(row_list)
         
 
-    with open('okba_clients.csv', 'w', encoding='UTF8', newline='') as f:
+    with open('rabah_clients.csv', 'w', encoding='UTF8', newline='') as f:
         writer = csv.writer(f)
         writer.writerows(data)
     f.close()
